@@ -1,0 +1,83 @@
+---
+title: "Homework 1"
+author: "Your Name Here"
+format:
+  html:
+    toc: true
+    toc-location: left
+    self-contained: true
+jupyter: python3
+---
+
+Professional wrestling, while not everyone's cup of tea, is big business. What started as a carnival act has turned into a global 
+entertainment industry. Netflix recently started showing Monday Night Raw, a program from the biggest North American wrestling company, 
+WWE -- this deal is reportedly worth \$5 billion. Like any large entity, WWE is not without competition, drama, and scandal. 
+
+## General Tips
+
+This is very much a step-by-step process. Don't go crazy trying to get everything done with as few lines as possible. 
+Read the documentation for the AlphaVantage api! Carefully explore the pages from cagematch. There isn't a need to get too 
+fancy with anything here -- just go with simple function and all should be good. Don't print comments, but use normal text for explanations.
+
+## Step 1
+
+In the `calls` folder, you'll find 4 text files -- these are transcripts from quarterly earnings calls. Read those 
+files in (glob.glob will be very helpful here), with appropriate column names for ticker, quarter, and year columns; this should 
+be done within a single function. Perform any data cleaning that you find necessary. 
+
+```{python}
+import glob as glob
+import pandas as pd
+
+glob.glob("C:/Users/sberry5/Documents/teaching/UDA/data/calls/*")
+```
+
+## Step 2
+
+Use the AlphaVantage api to get daily stock prices for WWE and related tickers for the last 5 years -- pay attention to your data. You cannot use any AlphaVantage packages (i.e., you can only use requests to grab the data). Tell me about the general trend that you are seeing. I don't care which viz package you use, but plotly is solid and plotnine is good for ggplot2 users.
+
+```{python}
+import requests 
+
+```
+
+## Step 3
+
+Just like every other nerdy hobby, professional wrestling draws dedicated fans. Wrestling fans often go to cagematch.net to leave reviews for matches, shows, and wrestlers. The following link contains the top 100 matches on cagematch: https://www.cagematch.net/?id=111&view=statistics
+
+* What is the correlation between WON ratings and cagematch ratings?
+
+** Which wrestler has the most matches in the top 100?
+
+*** Which promotion has the most matches in the top 100? 
+
+**** What is each promotion's average WON rating?
+
+***** Select any single match and get the comments and ratings for that match into a data frame.
+
+```{python}
+from bs4 import BeautifulSoup
+
+```
+
+## Step 4
+
+You can't have matches without wrestlers. The following link contains the top 100 wrestlers, according to cagematch: https://www.cagematch.net/?id=2&view=statistics
+
+*** Of the top 100, who has wrestled the most matches?
+
+***** Of the top 100, which wrestler has the best win/loss?
+
+```{python}
+
+```
+
+## Step 5
+
+With all of this work out of the way, we can start getting down to strategy.
+
+First, what talent should WWE pursue? Advise carefully.
+
+Second, reconcile what you found in steps 3 and 4 with Netflix's relationship with WWE. Use the data from the following page to help make your case: https://wrestlenomics.com/tv-ratings/
+
+Third, do you have any further recommendations for WWE?

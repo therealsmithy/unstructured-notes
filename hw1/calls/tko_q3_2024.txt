@@ -1,0 +1,450 @@
+Company Participants
+
+Seth Zaslow - Head of Investor Relations
+Ariel Emanuel - Executive Chair and Chief Executive Officer
+Andrew Schleimer - Chief Financial Officer
+Mark Shapiro - President and Chief Operating Officer
+Lawrence Epstein - Chief, UFC
+Nick Khan - President of WWE, TKO's Board of Directors
+
+Conference Call Participants
+
+Ben Swinburne - Morgan Stanley
+Brandon Ross - LightShed
+David Karnovsky - JPMorgan
+Stephen Laszczyk - Goldman Sachs
+Robert Fishman - MoffettNathanson
+Peter Supino - Wolfe Research
+Richard Greenfield - LightShed Partners
+
+Operator
+
+Good afternoon, and thank you for joining today's Q3 2024 TKO Earnings Call. My name is Regan, and I'll be your moderator today. [Operator Instructions]
+
+I would now like to pass the conference over to your host, Seth Zaslow, Head of Investor Relations. Seth, you may now proceed.
+
+Seth Zaslow
+
+The call will also be available via our website for at least 30 days. After prepared remarks from Ari Emanuel, TKO's Executive Chair and Chief Executive Officer; and Andrew Schleimer, TKO's Chief Financial Officer, we'll open the call for questions. Mark Shapiro, our President and Chief Operating Officer; and Andrew will be handling the Q&A. The purpose of this call is to provide you with the information regarding our third quarter 2024 performance.
+
+I want to remind everyone that the information discussed will include forward-looking statements and/or projections that involve risks, uncertainties and assumptions. Please see our filings with the Securities and Exchange Commission for further detail. If these risks or uncertainties were to materialize or any assumptions prove incorrect, our results may differ materially from those expressed or implied on this call.
+
+Forward-looking statements speak only as of the date they are made, and we undertake no obligation to update them in light of new information or future events, except as legally required. Our commentary today will also include non-GAAP financial measures, which we believe provide an additional tool for investors to use in evaluating ongoing operating results and trends.
+
+These measures should not be considered in isolation from or as a substitute for financial information prepared in accordance with GAAP. Reconciliations between GAAP and non-GAAP metrics can be found in our press release issued today as well as the information posted on our IR website. With that, I'll now turn the call over to Ari.
+
+Ariel Emanuel
+
+Thanks, Seth.
+
+Just over a year since UFC and WWE came together to form TKO, our conviction in this business is as strong as ever. We're executing on our strategy and delivering record results while realizing greater integration and synergy opportunities than initially expected.
+
+On the heels of TKO's solid third quarter performance and with our visibility through year-end, we're now expecting to come in at the upper end of our full year guidance range for both revenue and adjusted EBITDA. Additionally, two weeks ago, we made two announcements that we believe reinforce our commitment to creating long-term value for shareholders. First, we authorized a capital return program featuring a $2 billion share repurchase program and a quarterly cash dividend program of $75 million.
+
+Second, TKO announced an agreement to acquire industry-leading sports assets, Professional Bull Riders, or PBR, premium sports hospitality provider, On Location; and global sports rights and production powerhouse, IMG. I cannot impress enough how bullish we are about this deal, which aligns with the pure-play sports strategy TKO will execute and be known for.
+
+This acquisition strengthens our global position in sports rights, experiences and hospitality, and it adds PBR to our portfolio as another valuable and growing sports league. These assets will power our profile, give us greater scale, strengthen our position in the sports marketplace and accelerate returns for shareholders.
+
+We're also proud and pleased to share that On Location has extended its partnership with the NFL through 2036, ensuring it remains the official hospitality provider at premier events, including the Super Bowl, NFL Draft and NFL International Games for years to come. Turning to the quarter. Our results highlight sustained demand for UFC and WWE live events and underscore our business' ability to reach new heights and attract fans globally.
+
+UFC 306 at Sphere Las Vegas is a prime example. The sold-out event not only set the record for UFC's highest grossing live event, but also became Sphere's highest grossing single event and achieved UFC's highest event merchandise and sponsorship sales. Notably, 89% of ticket buyers came from outside Nevada, one of the highest out-of-town attendance rates for any UFC or Sphere event. This turnout underscores UFC's appeal as a destination event, drawing fans from across regions and delivering economic benefits to host cities.
+
+Beyond these impressive metrics, this event also showcases what TKO is truly all about, innovating and revolutionizing the way fans consume and engage with live sports. Internationally, UFC events also delivered. UFC 304 in Manchester became the highest grossing event at Co-op Live and drew the largest attendance for a UFC event in the U.K. In Perth, UFC 305 marked a successful start to our multiyear partnership with the Western Australian government, setting the record for RAC Arena's highest grossing event.
+
+And in Paris, our September Fight Night became Accor Arena's highest grossing event to date. At WWE, live events outperformed in the third quarter and set 42 individual market records for ticket sales, evidence that the strategies we have been implementing around ticket pricing and event routing are bearing fruit. While the U.S. remains strong, momentum is increasingly evident in international markets, where WWE continues to sell out venues and draw record crowds. In the third quarter, WWE held 18 shows outside the U.S., up from 11 in the same period last year.
+
+Highlights included a highly anticipated return to Japan after a 5-year hiatus, selling out in Tokyo with a record gate and Germany's first-ever premium live event, which became WWE's highest grossing arena event, a record that we have broken three times this year.
+
+Meanwhile, in Cleveland, SummerSlam achieved record-breaking results, becoming WWE's highest grossing non-WrestleMania event in history. WWE also had successful debuts on USA Network for SmackDown and the CW Network for NXT. In fact, through the first five weeks, NXT is up 12% in viewership versus USA last year. Meanwhile, SmackDown's return to USA Network under our five year domestic media rights agreement with NBCUniversal has already driven strong and sustained viewership. Without a doubt, this partnership further strengthens our long-standing relationship with NBCU, and we're anticipating a strong draw for the upcoming debut of quarterly PrimeTime specials starting December 14 with Saturday night's main event on NBC.
+
+And with Raw's launch on Netflix nearing, both WWE and Netflix are actively preparing for an impactful debut on January 6, which will expand the reach of WWE and deliver our flagship content to a global audience.
+
+As we close out the year and look to 2025, we're confident in the strength of our iconic properties and the momentum we're building towards significant milestones from an exciting lineup of live events that include UFC 309 at Madison Square Garden later this month, WrestleMania in Las Vegas and the first-ever 2-night Summer Slam at MetLife Stadium to closing our acquisition of PBR, On Location and IMG, all of which fuel further growth.
+
+With that, I'll turn the call over to Andrew.
+
+Andrew Schleimer
+
+Good afternoon.
+
+As we previously disclosed, on September 26, we reached a revised agreement to settle all claims asserted in the Lee UFC antitrust lawsuit for $375 million. In the third quarter, we recorded an incremental $40 million charge to bring the aggregate expense on our books to $375 million. On October 22, the court granted preliminary approval of the settlement. As a result, we made the first of three payments for $125 million into escrow in late October.
+
+We expect to pay the remaining $250 million in 2025, $125 million in the first quarter and $125 million by the end of Q2.
+
+As we've mentioned, the settlement is anticipated to be deductible for tax purposes as and when paid. As a result, our tax distributions to members in the third quarter were reduced to reflect the settlement payment such that we didn't realize an adverse dollar-for-dollar impact to cash on hand. Third quarter reported results included three months of activity for both UFC and WWE.
+
+The reported results for the third quarter of 2023 include WWE activity for the period from September 12 through September 30, 2023. To assist with comparability, we've presented supplemental financial information in our press release and IR website that includes WWE activity and the portion of WWE related to the corporate group for the period from July 1 through September 11, 2023, as well as each quarterly period from January 1, 2022, through September 11, 2023.
+
+For the third quarter of 2024, we generated revenue of $681 million. Net income was $58 million. Adjusted EBITDA was $310 million, and our adjusted EBITDA margin was 46%. Including WWE activity for July 1 through September 11, 2023, combined revenue for the third quarter was $685 million, combined adjusted EBITDA was $298 million, and our combined adjusted EBITDA margin was 44% Inclusive of these amounts, revenue decreased 1%, adjusted EBITDA increased 4% and adjusted EBITDA margin increased two percentage points. Our UFC segment generated revenue of $355 million in the quarter, a decrease of 11% or $43 million.
+
+Adjusted EBITDA was $196 million, a decrease of 18% or $43 million. UFC's adjusted EBITDA margin was 55%, down from 60% in the prior year period. As expected, revenue was impacted by the timing of the events calendar. UFC had 10 total events in the third quarter of this year compared to 13 total events in the prior year period. As Ari mentioned, the health of the business remains extremely strong, and UFC continues to benefit from the meaningful tailwinds of the experience economy.
+
+Media rights and Content revenue decreased 19% to $216 million. The decrease was driven by one less numbered to event and two fewer fight nights as compared to the prior year period. The contractual escalation of media rights partially offset the decrease from the timing of the events calendar. Live events revenue decreased 1% to $51 million.
+
+Ticket sales reflected the decline in the number of total events in the third quarter as compared to the prior year. This headwind was essentially offset by strong underlying trends in pricing and attendance for high-profile events such as UFC 306 at Sphere as well as an increase in site fees. Results in the quarter included a site fee related to our Fight Night in Abu Dhabi. Sponsorship revenue increased 16% to $74 million. Despite the unfavorable mix of events in the quarter, new partnerships and renewals drove the increase.
+
+UFC 306 was the highest grossing event in UFC's history and the first event to feature a title partner sponsor, which we sold to Riyadh season. Adjusted EBITDA reflected the decrease in revenue. Expenses were essentially flat year-over-year. Direct operating expenses decreased primarily due to lower marketing, athlete costs and direct cost of revenue due to one less numbered event and two fewer flight nights. These decreases were partially offset by higher production costs, primarily related to UFC 306.
+
+Given the unique nature of the venue and production elements associated therewith, we incurred production costs for UFC 306 that were meaningfully higher than our historical norm for a numbered event, which resulted in reduced adjusted EBITDA and reduced adjusted EBITDA margin in the quarter. However, as Ari highlighted, UFC 306 was a once-in-a-lifetime experience and a highly successful event for UFC. SG&A increased primarily due to higher cost of personnel as compared to the prior year period.
+
+WWE delivered strong quarterly revenue and adjusted EBITDA. The financial results continue to reflect healthy creative momentum in the business as well as the benefits to both the top and bottom line from the initiatives we implemented since the formation of TKO. Our segment generated revenue of $326 million in the quarter. Adjusted $2 million and adjusted EBITDA margin was 36%. Revenue increased 14% or $39 million. Adjusted EBITDA increased 72% or $73 million and adjusted EBITDA margin increased 18 percentage points.
+
+Revenue growth was led by continued strong performance for live events. Live events revenue increased 31% to $51 million. The increase was primarily related to an increase in ticket sales. Since the formation of TKO, we've been focused on increasing ticket yield, and this strategy favorably impacted our results in the quarter, not only in connection with the premium live events such as SummerSlam, which was the highest grossing non-WrestleMania event of all time, but for the balance of WWE's live events in the aggregate.
+
+Media rights and content revenue increased 8% to $227 million. The increase was primarily related to the contractual escalation of media rights fees as well as the timing of our weekly programming, which resulted in one additional episode of RAW in the quarter compared to the prior year.
+
+Sponsorship revenue increased 54% to $22 million due to new partnerships and renewals across multiple categories, including beverage, QSR, spirits, entertainment and communications. Of note, SummerSlam was highly successful and included for the first time three inning sponsors as well as a record number of partners. It's early days, but we have and expect to continue to realize benefits from the unified global partnerships team we put in place at the beginning of the year.
+
+Adjusted EBITDA reflected the increase in revenue and a decrease in expenses. The decrease in expenses primarily reflected lower personnel costs and production costs related to our planned cost reduction initiatives implemented following the formation of TKO. Corporate expenses were $61 million for the third quarter of 2024. On a combined basis, corporate expenses were $42 million for the third quarter of 2023. The increase was primarily due to higher personnel costs, including executive compensation and other G&A expenses following the formation of TKO in September of last year.
+
+The increase also reflected the impact of the services fee that UFC and WWE paid to Endeavor, which commenced for WWE in March of 2024. Now moving to our capital structure. We define free cash flow as net cash provided by operating activities less capital expenditures. Free cash flow excludes the majority of the mandatory tax distributions to our owners, but does include the portion of cash taxes paid by TKO PubCo. For the quarter, we generated $226 million of free cash flow.
+
+This includes $11 million of capital expenditures, approximately $3 million of which related to WWE's new headquarters. The quarter was favorably impacted by the timing of working capital, most notably the collection of the site fee associated with our WWE Saudi event, King and Queen of the Ring that was held in May.
+
+We ended the quarter with $2.736 billion in debt and $457 million in cash and cash equivalents. Given the strength of our balance sheet and financial profile, the implementation of a robust and sustained capital return program has and will continue to be a top priority for us. As we announced on October 24, our Board of Directors authorized a share repurchase program of up to $2 billion of our Class A common stock.
+
+We expect the program to commence following the close of the acquisition of PBR, On Location and IMG in the first half of 2025, but is not conditioned on the closure of this transaction. Once the program does commence, we anticipate that the pace of the repurchase activity will be fairly linear and expect to complete the program within a period of three to four years.
+
+We also announced that our Board authorized a $75 million quarterly cash dividend program. The dividend program will involve a quarterly distribution by TKO OpCo and holders of TKO Class A common stock will receive their pro rata share distributions. We intend to make the first dividend payment on March 31, 2025. As with the share repurchase program, the dividend is not conditioned on the close of the PBR, On Location and IMG transaction.
+
+Earlier today, we announced the refinancing of our credit facility, seeking a new 7-year $2.75 billion term loan and a new 5-year $205 million revolver, which are approximately the same balances as we currently have. The facility will continue to include significant capacity for incremental term loan add-ons, which we anticipate will be a source of funding the share repurchase program. As we've previously articulated, our target for net leverage remains up to 3x. Given our strong balance sheet, expected growth in adjusted EBITDA and free cash flow generation, we expect to have additional financial capacity.
+
+However, our primary focus continues to be driving value at UFC and WWE while also planning for the integration of PBR, On Location and IMG into TKO. As we noted when we announced the transaction, PBR, On Location and IMG are the only assets that TKO will acquire from Endeavor. As we've discussed in the past, we manage the business with a focus on full year performance.
+
+Therefore, we believe our results are best evaluated on a full year basis, given the quarterly fluctuations that are inherent in our operations related to the timing of our events and content deliveries, among other items. As we noted on October 24 and in our press release today, we are revising our full year '24 guidance for revenue and adjusted EBITDA. We are now targeting the upper end of the previously provided ranges for both revenue of $2.67 billion to $2.745 billion and adjusted EBITDA of $1.22 billion to $1.24 billion. The increase is related primarily to strong operating performance on a year-to-date basis, particularly in live events and sponsorship at both of our businesses and visibility through the end of the year.
+
+On our last call, we noted that we expected the third quarter to be the most challenging quarter of the year for UFC given the unfavorable timing of events and it was. As we look to the fourth quarter of 2024, we want to highlight a few notable items. At UFC, results are expected to improve as the current calendar includes an additional event and two additional events with live audiences compared to the prior year period.
+
+At WWE, as we've previously discussed, results will reflect the short-term domestic rights deal we reached earlier this year with USA Network for RAW for the fourth quarter. This will have an unfavorable impact of approximately $50 million to both revenue and adjusted EBITDA as compared to Q4 2023. As a reminder, and for the avoidance of doubt, this is purely timing related. In January 2025, our long-term agreement with Netflix to distribute raw commences. In terms of expenses, we expect results to continue to reflect the benefit of the initiatives we've implemented to take costs out of the business.
+
+Today, we also reaffirmed our expectation for full year 2024 free cash flow conversion to be in excess of 40% of adjusted EBITDA. Our outlook includes the payment of $125 million for the UFC lawsuit settlement and transaction costs related to the strategic acquisition of Endeavor assets, both of which are included in operating cash flow. In conclusion, we generated solid third quarter results that reflected continued strength at both of our businesses. We are extremely excited about the road ahead and our prospects for 2024 and beyond.
+
+With that, I'll turn it back to Seth.
+
+Seth Zaslow
+
+Thanks, Andrew. Operator, we're ready to open the call for questions.
+
+Question-and-Answer Session
+
+Operator
+
+[Operator Instructions] Our first question comes from Ben Swinburne of Morgan Stanley. Ben, your line is now open.
+
+Ben Swinburne
+
+Great. Hi, good afternoon everybody. Thanks for taking the question. Maybe I'd like to start with Mark on sort of the UFC, which is right around the corner with the domestic rights. I think you've made some comments recently about potentially splitting up the rights, taking back pay-per-views. I think as a public company, you certainly benefit from sort of the predictability of licensing out those pay-per-view fights to ESPN. But I'm wondering how you think about that relative to the potential upside of distributing those yourself.
+
+And then I'd love to hear, Andrew, the WWE margins this quarter were particularly impressive. I think your expenses were down like 20%, even though revenues were up 13%. You mentioned merger synergies. Anything else you'd flag because even live events, I think the event count was up, I think, at least internationally. So surprised how strong of a margin you had in Q3. I'd love any more details you might share.
+
+Mark Shapiro
+
+Thanks, Ben. Good to hear from you. Andrew will start since it's just fresh off your long second part of the question, and then I'll come back on the...
+
+Andrew Schleimer
+
+Look, I think the margin benefit from actually one additional raw event in the quarter. So almost like-for-like from an event calendar perspective on WWE. But what I think you're seeing here is just the continued cost savings measures and initiatives that we set out to put in place when we launched TKO really flowing through us just being more efficient top to bottom, getting a bit more on the production side as Nick and Lee Fitting are laser-focused on execution there.
+
+And really, I'd like to focus on growth in the ad sales and sponsorship department, 54% growth over prior year Q3, and those deals are being structured at higher margins than they had been at the past -- in the past. So you're seeing just growth from high-margin revenue contributors and even more so than they were contributing Q3 in 2023.
+
+So early innings on the sales side, but really encouraged by what we're seeing.
+
+Mark Shapiro
+
+Yes. And I would just say, Ben, just to add to that, I mean, you can just expect more margin accretion as we flow through. I'd like to remind folks, we're still in at least mid-innings, if not early innings on the integration of these two assets of WWE and UFC. I mean we're, of course, already guiding to the fact that we'll beat our net cost synergies of $100 million.
+
+But as we succeed with our strategy of having these events on the same week or same weekend or subsequent weekends now with PBR as well, our margins are only going to be better because we're going to save on that cost side. I mean we'll sell triple header sponsorships as we like to call them, somebody that comes in and sponsors all three events. That will be huge for us and it will drive local ad sales. But on the cost side, we're going to benefit there. And I can tell you that, to Andrew's point, Nick Khan and Pete Dropick, who runs all of our ticket operations and Lawrence Epstein, I mean, they're working on this night and day, city by city, region by region, country by country, where can we bring all three to town.
+
+There's that as well. So on the first part, look, here's what I would tell you. In terms of what really benefits, to your point, what benefits us and our shareholders is maximizing value on these renewals.
+
+That's the bottom line. So we're not looking to upend or change for change's sake or unorthodox models. We are looking to maximize our rights end of story. UFC is mainstream. incredibly popular.
+
+I see some of the struggles going on with other leagues right now, both linear and digital, leagues that have started new seasons and are not off to a rocket start like we're accustomed to. That's not the case with UFC. We're still driving subs on ESPN+. When we're on ESPN, ESPN2 or ABC, we're a ratings winner and driving more advertising for those platforms. And on the WWE side, as Andrew talked about in his -- and Ari talked about in the prepared comments, across the board from CW to, of course, Comcast, WWE is still a stalwart.
+
+So we're flying. And if we have to be creative to help potential partners or bring other suitors in the door so that we get a higher price or live up to the guide that the Street has been giving us on the renewals, not the one we're giving them, but the one they're giving us, then we're going to do it. And that's all we're trying to signal to our shareholders and all we're trying to signal to the media suitors, the platforms, the companies that are going to be chasing us relatively soon.
+
+Ben Swinburne
+
+Thanks so much.
+
+Mark Shapiro
+
+Thank you.
+
+Operator
+
+Our next question comes from Brandon -- I'm so sorry, say it one more time?
+
+Mark Shapiro
+
+No, go ahead. Go ahead. Sorry.
+
+Operator
+
+No problem. Our next question comes from Brandon Ross of LightShed. Brandon, your line is now open.
+
+Brandon Ross
+
+Thanks very much. Maybe just to start with a follow-up on Ben's UFC renewal question. I've been thinking a lot about how different the approach to distributing your top content is between WWE and UFC right now. For WWE, the PLE, you're going with the broadest possible reach on Netflix and Peacock. There's no discrete transaction to watch your content. But on UFC, you're in this high-cost, pay-per-view model.
+
+And you've said and I think you maybe alluded to it with the last answer, you don't want to shake anything up really, and you prefer to re-up your deal with Disney. Why is the continuation of a pay-per-view model the best path, especially given how MMA is still in its relative infancy compared to wrestling?
+
+Mark Shapiro
+
+Look, I would just tell you, Brandon, I mean, just a reminder, obviously, internationally, we sell pay-per-view for the UFC, but we do not sell the pay-per-view domestically. That's ESPN's job.
+
+And what I can tell you as we enter into these negotiations, at the end of the day, it's what the market will bear. That's really what it is. And we're next up. We're the next big thing on the block, if you will.
+
+We have a proven track record. Our demos are insane. I mean really just across TKO where 50% of our audience is 18 to 34, which is what most platforms and companies are chasing. So we're in good stead there.
+
+We've terrific diversification, and we drive a very strong Hispanic audience when it comes to the UFC, and we're gender neutral. And we're not just talking about women watching women's fight. That's not the case. We have a strong base of women watching all of our fights.
+
+So we're sitting in a pretty good position. Pay-per-view is still a strong model. It worked to build ESPN+. It's worked for us internationally. We've got great history with it.
+
+DIRECTV and DISH may be coming together. So who knows the kind of opportunity there. Paramount and CBS are obviously getting their act together. They'll be closing next year. I believe they'll be at the table if and when it comes to them because they've already signaled both Jeff Shell and David Ellison that sports will be a banner vehicle of content for them.
+
+So we will not have a shortage of suitors. We feel great. But we love Disney. I can't underscore it enough. And Jimmy Pitaro and Bob Iger get UFC and very much were architects in our deal. Kevin Mayer was still at the time, but they were very much part of the us crafting how we were going to do that deal.
+
+Things change, models change, viewing patterns change. Broadcast is now kind of back in, if you will. Cable is obviously having its struggles, but still nothing to crown at and streaming is on fire and new platforms and fast channels are coming all the time. So it's really just demonstrating and signaling to the market that we have flexibility and a willingness to play ball on a myriad of business models. And Ari and I, in particular, are very focused on not just communicating that, but actively discussing those potential models with all of the partners and then some.
+
+Brandon Ross
+
+Okay. And then Dana White recently talked about getting into boxing and said that it would be with "guns blazing." Can you expand on that? Just wondering how this could be done in a way that's in sync with your current margin profile. And will this be -- happen organically by perhaps letting UFC fighters box under your banner? Or is this one of those instances where we could see some M&A at play?
+
+Mark Shapiro
+
+Yes. No, look, first of all, we're -- some off-the-cuff comments from Dana White do not translate into a strategy that we're communicating to the Street, right? Dana says a lot of things and has a lot of passions, and that's why we love them. He's also the best promoter, the support of MMA. And frankly, if it was boxing, has or will ever see.
+
+What I can tell you is boxing at its best is confused and fragmented. At its worst, it's broken. And we think the sport presents an interesting growth opportunity for us. Dana White, and I should mention Nick Khan, have deep expertise and long-standing relationships in what they call the Set science, otherwise known as boxing. And if we were to get involved in Boxing, we would expect to do so in an organic way, not an M&A way.
+
+So i.e., we're not writing a check. And if we launch the vertical at any time, we kind of see it as doing it with a partner who would fund it and pay us to operate. So nothing to announce today, but this is one area we're going to continue to explore. We've talked about the dearth of leagues that are out there.
+
+Obviously, we're acquiring PBR. There's not much else. We don't necessarily need to add anything to our model, but boxing is ripe. It is ripe for a fix. And we're blessed to have two experts in the field.
+
+And if an opportunity presents itself or we can chase one down that does not put much risk or any risk for that matter on us financially, then we're going to pursue it. And in terms of models and league and how we structure it, et cetera, et cetera, that's way down the road. And once we have something, if we have something, you'll be the first to know.
+
+Brandon Ross
+
+Thank you very much.
+
+Mark Shapiro
+
+Thank you.
+
+Operator
+
+Our next question comes from David Karnovsky of JPMorgan. David, your line is now open.
+
+David Karnovsky
+
+Hi, thank you for the question. Maybe just following up on the UFC renewal. Mark, interested to know how you're positioning UFC Fight Pass potentially as part of negotiations? Last time, that was kept separate. Is that the intention this time around? Or is there kind of an opportunity to roll the service or content into a partner platform and receive better economics? And then just staying with UFC, I wanted to know your thinking about title sponsorship as potential inventory. Was this kind of a unique one-off? Or can you make more use of the pay-per-views ahead?
+
+Mark Shapiro
+
+Yes. Thanks, David. Look, I'll tell you, as we sit here today, we're really pleased with the growth of UFC Fight Pass. In fact, internationally, we're really seeing subs tick up, especially in Brazil, where we finally got our act together after a slow start. We see keeping that separate.
+
+I'll tell you that there is truly untapped potential when it comes to UFC Fight Pass. And the secret to driving subs on UFC Fight Pass is just quite simply more live events, period, end of story. And so in any renewal, we're going to explore the ability for us to potentially have exclusive fights on UFC Fight Pass, but then also lean further into the combat space with regard to Karate, Jiu Jitsu, Wrestling itself, boxing potentially, more live events that we can program around the clock that really drive demand in terms of sub acquisition and fan base.
+
+So to answer your question, we expect to keep that as a proprietary asset that we control. It's not for sale, but it will have more original content, less taped programming and more live events. That's the first part. As regard to the second, the title sponsors, look, yes, that was a tremendous deal we did with Riyadh Season and the Saudis to sponsor the Sphere event. I think everybody got a good deal out of that one because that was such a spectacle for them and for us.
+
+And if there are opportunities to sell more title sponsors, we're going to pursue them. And I can tell you, in the bag of inventory that Grant Norris Jones, who runs our global partnerships team and his lieutenant, Lou Koskovolis, as they go to the street, door-to-door, brand to brand, category to category, knocking down business, which I'll remind you, is almost kicking the door of $300 million this year between UFC and WWE. So we're heading north fast. They will absolutely deploy title sponsorship inventory if it makes sense. It has to be authentic. It has to be seamless, and we certainly don't want to overcommercialize the UFC. But I think it was a pretty good suit and a good fit as it relates to the Sphere event.
+
+David Karnovsky
+
+Thank you.
+
+Mark Shapiro
+
+Thank you.
+
+Operator
+
+Our next question comes from Stephen Laszczyk of Goldman Sachs. Stephen, your line is now open.
+
+Stephen Laszczyk
+
+Hi great, thanks for taking the questions. Mark, in the past, you've spoken about the impact the Sphere event has had on the UFC brand. I'm curious now post Sphere, how you're thinking about the evolution of some of these marquee UFC events that you put on, maybe the opportunity to elevate more select pay-per-view flights, perhaps potentially through a Sphere like event in the future or perhaps even through stadium-like events that you host on the WWE side, similar to WrestleMania. And then second, On Location, Ari called out the NFL deal through 2036, I think. I was curious if you could just talk a little bit more about the financial profile of that deal, the extent to which there might be operating leverage if you outperform on selling NFL premium hospitality. And if you think a deal like the NFL one could be a good template for similar deals going forward with sports leagues.
+
+Mark Shapiro
+
+Great. So first off, I just want to remind everyone that we do not intend to do another event at the Sphere. That was one and done. I think we've signaled that to the market. Of course, anything can change just like rock bands do their farewell tours and seem to stick around for another 20 years. But Dana is pretty intent that this is a one and done. That's why we spent so much. That's why we made so much out of it.
+
+By the way, it took a lot out of us in terms of focus to pull it off in the way we did. But in terms of creating more spectacles, like that's our job, period. And globally, that's our job.
+
+And frankly, much of that responsibility to create those spectacles falls to Lawrence Epstein, who's running the UFC business with Dana day-to-day. Lawrence happens to be in the room, and I'd like him to opine on and comment on your first part of the question. Lawrence?
+
+Lawrence Epstein
+
+Thanks, Mark. Just a couple of things to add to what Mark just had to say. First of all, huge achievement, certainly was a challenge, as Mark indicated, but a huge achievement for our UFC team to put on that. What we view as really a seminal event in history of sports entertainment. It's the first time anything like this has ever been done.
+
+And the world of sport, the world of entertainment and the entire world is really looking at this event. So huge achievement, huge success for our entire team.
+
+It's really, I think, part of our be first mentality. We're the first group to ever do this. Maybe will be the only one, but we're certainly the first so far. And we're really proud of the achievement, and of course, the leadership that we showed.
+
+And as I said, this event was a game changer. I think as we look at future events and as arenas, and I'll coin this term spherize themselves, add more LED, add more technology to their facilities, we're going to continue to up the game with respect to our production.
+
+The first facility that has really done this outside the Sphere, of course, is the Intuit dome in California where Clipper is going to be playing. And you can expect to see us there very soon taking advantage of that great technology there.
+
+Mark Shapiro
+
+By the way, last time I checked, the Sphere is launching in Abu Dhabi. Dana did say no more events at the Sphere in Vegas, but that doesn't mean we can't go to Abu Dhabi. So I'm looking forward to pursuing that [indiscernible] not get filled probably two decades from now. Andrew, go ahead.
+
+Andrew Schleimer
+
+Thanks for the question, Stephen, on -- obviously, On location and the NFL. There was a press release that Endeavor actually issued yesterday as in advance of the acquisition, Endeavor is responsible for extensions with their current customer On location and the NFL. But us at TKO, the acquirer of this business are obviously thrilled with the extension of that agreement through 2036.
+
+Obviously, NFL best-in-class sports brand and the opportunity to continue that relationship is obviously extraordinarily beneficial for us at On location, TKO and will benefit us through the balance of our portfolio. We're not going to comment on the economics of the deal. Those are not public nor will they be in the future.
+
+But that being said, I do want to pivot the conversation for a moment just to visibility and what we discussed last week when we announced the acquisition of these assets. We are going to go to extraordinary lengths to ensure that both our external and internal constituents have as much information and tools to understand the revenue and profitability profiles of these businesses, whether they be on a stand-alone basis or within our portfolio, it's important to understand not only how they grow, but how they benefit the other assets in our portfolio.
+
+So rest assured, we'll be able to give you information as time goes on, and the NFL relationship is core to OLE and its future revenue and growth prospects.
+
+Mark Shapiro
+
+Yes. I would just underscore that. We -- Andrew and I have too much experience here at Endeavor with the lumpiness of On Location and how difficult that was for the Street to model. The transparency and visibility is going to be significant. Starting with our investor presentation, which in the appendix on Page 16, we laid out specifically the Olympics, what we expect to make year-over-year, year after year over a 4-year span and then also World Cup FIFA.
+
+So you're going to get more of that and then some. We don't want any confusion. We don't want to muddy this. We don't want to clutter it. We want clarity.
+
+As far as the NFL, just the relationship, I would just say because we're fresh off of meetings with the commissioner and Brian Rolapp, who is their Chief Revenue Officer this week. I mean, I can't say enough about this partnership. Obviously, we do better in years when the Super Bowl is in Los Angeles or Las Vegas versus in New Orleans. But nonetheless, we do well, period.
+
+The draft, the Super Bowl, I mean, significant properties, big ratings draws. And these international games are quickly becoming bellwethers. I mean the commissioner has already signaled he'd like to get to as many as 18 in the next few years. I recently went out to the game in London, and we had a jam-packed house of almost 500 patrons that flew out with On location to see the Chicago Bears, Jacksonville Jaguars game, airfare, hotel, F&B, personal services, customized programs. I mean we're just seeing more and more demand for this.
+
+So we're really excited. And I will tell you, just further quote in the press release, this deal, while Ari and I have been working on this for a while, it came to fruition because they were really excited about being in a sports pure-play company like TKO.
+
+Stephen Laszczyk
+
+That’s great. Thank you, guys.
+
+Mark Shapiro
+
+Thank you.
+
+Operator
+
+Our next question comes from Robert Fishman of MoffettNathanson. Robert, your line is now open.
+
+Robert Fishman
+
+Hi. Good afternoon. Two questions for you guys. Mark, with the Netflix deal fast approaching, can you share more about your excitement to drive additional growth in WWE sponsorship dollars in '25, maybe in the U.S. and internationally? And then, Andrew, if I can follow up on the costs from earlier, any way you can break out WWE and UFC cost synergies to date and how you think about the trajectory of each cost bucket thinking about 2025 and beyond?
+
+Andrew Schleimer
+
+Look, I'll take the second question first and then defer to Mark. But as we've said on countless occasions, the best way to look at our businesses on a full year basis. And when we articulated our cost savings guide of $50 million to $100 million initially and then articulated the upper end of that range and then came back and said we're going to exceed the upper end of that range. You should assume that the lion's share of that is implicit in our full year guide in 2024.
+
+We are knee deep in our 2025 planning right now and intend to be back to the Street with some insight into '25 when we report our full year results sometime at the end of February. On that call, we'll be giving further insight and information as to additional efficiencies that we intend to achieve in '25 with months of planning behind us. But rest assured, we are sharpening our pencils, and we are looking for additional means to grow well in excess of $100 million. But to date, our upper end, a little bit in excess of that upper end are implicit in our 2024 numbers.
+
+Mark Shapiro
+
+Great. And Robert, just on the first part of your question, I would say that, yes, it's actually been pretty amazing as we go to the street. Keep in mind with our UFC deal, we go to the street with ESPN. So we're out there with advertisers for 360 holistic packages. They're buying in Arena, right?
+
+They're buying media inventory on ESPN, so on and so forth, not to mention the ancillary programming we have leading up to the fight like the way in. So those packages allow us to get a higher CPM. Netflix has been terrific out of the gate, very creative, very innovative.
+
+And because they're new at it, they really want to explore. So we're out there trying to sell combination packages with them, of course, media inventory on Netflix as well as what it is we do around the event. And just recently, Grant Norris Jones and his team, I can mention to Grant Norris Jones today, have sold a Minute Maid deal as an example, where Minute Maid as a sponsor comes in as a global partner of WWE, but also are buying inventory in the Netflix programming like in their wheel, if you will. And that's a deal we drove, not them. But it works both ways.
+
+And I can tell you, Nick Khan, who's also sitting here today, of course, the President of WWE, he's knee-deep with the ad sales teams, both Netflix and our internal team to drive more of these 360 deals, and I'll let him make a few comments. Nick?
+
+Nick Khan
+
+Yes. So thank you, Mark, very much. If you think about it in perspective, 20 years ago, Monday Night Raw was on Nashville Network, which became the National Network, which became GNN, which became Spike, which is now Paramount. Now we're going to Netflix.
+
+So forget their sub count that they have at this moment. It's 650 million potential viewers globally for our product. So the ability to go out, Andrew Schleimer mentioned in his prepared remarks and then slightly after that, the growth year-over-year in WWE sponsorship. We're expecting even more growth once Netflix kicks in, in January because of the global reach and because of the power of Netflix in so many different markets.
+
+Operator
+
+Our next question is from Peter Supino of Wolfe Research. Peter, your line is now open.
+
+Peter Supino
+
+A question on cash flow. Your portfolio of businesses is obviously a good cash generator. We think and have made the case that it's a great cash generator. And some of the numerical comments you've published on free cash flow conversion in the 40% range this year and maybe normalizing around 60%, if my memory serves, seem really beatable to us. So I'm just wondering if you'd comment on that bullish challenge for free cash flow.
+
+And then separately, if you just comment on the environment for hiring and retaining talent. It's just amazing a year ago, we were being asked to model the impact on talent costs of the equity capital raised by one of your competitors, and that doesn't come up anymore. So if you could update us there, it would be great.
+
+Andrew Schleimer
+
+Thanks, Peter. I think when we initially put a presentation together in April of '23, we showed on a pro forma combined basis, I believe it was '22 trailing north of 60% of EBITDA -- adjusted EBITDA conversion to free cash flow. When we initially guided this year, we had a number roughly in the 50% range. That was impacted by some timing of working capital, some additional investments in the headquarters here, WWE and some other onetime items.
+
+And we doubled back pro forma for the antitrust settlement, which obviously are payments that come out of operating cash flow and reduced free cash flow, albeit having a positive impact on our tax distributions given their tax deductible at 40%. Now candidly, things have moved around because of the onetime nature of some of these large-scale events in our business.
+
+But I think we stand by on a normalized basis, the 60% number and in excess of that 60% number over time. You're not looking at hugely capital-intensive businesses here. We will make investments, organic investments to further fuel our growth. But when we look to 2026, and we've had a lot of questions and commentary around the media rights renewals and the potential step function change in our revenue and profitability, we have a clear path to continued conversion and in excess of the numbers that we've said historically. So look, stay tuned.
+
+We'll be back in February, late February to talk about '25, but know that we also have the '26 renewals, which will further impact the profile of this business positively. Andrew.
+
+Mark Shapiro
+
+And then, Peter, on the talent question, I'll just hit this briefly. But the reason why you don't hear about it a lot, and we say this in all modesty, you don't hear about it because of the work of Paul Levesque, Dana White and Nick Khan and Lawrence Epstein. That's just a fact of the matter. They are experts in storytelling, period.
+
+They are experts in creating rivalry, period. They are experts like David Stern was in building and marketing stars. And when your platforms, when your businesses, when your leads become known for that, talent aspires to be with those leads.
+
+So we haven't had those challenges as of late because frankly, the talent wants to get to the UFC and WWE level. Now we don't take that for granted. We're not arrogant about it, and we want to incentivize all of our fighters at the UFC and all of our superstars at the WWE to put out their best every day and aim for the top of the mountain.
+
+But we're prudent about it, and we want to keep those costs under control. And as long as we do our job of continuing with that storytelling, continuing to build our fan base, continuing to surround ourselves with the right partners, then talent will gravitate towards the UFC and the WWE.
+
+Peter Supino
+
+Thanks so much.
+
+Operator
+
+Our next question is from Ryan Gravett of UBS. Ryan, your line is now open. Ryan, your line is now open.
+
+Mark Shapiro
+
+I think we lost Ryan during Andrew's commentary.
+
+Operator
+
+For the interest of time, we can move on. But Ryan, if you want to queue back in for your question. I'm so sorry, say it one more time?
+
+Mark Shapiro
+
+Why don't we go to the next -- go to the next question.
+
+Operator
+
+Sounds good. Our next question is from Richard Greenfield of LightShed Partners. Richard, your line is now open.
+
+Unidentified Analyst
+
+Hi, thanks guys for taking the question. Mark, I know this is a TKO call, but I actually had an Endeavor question. Endeavor, as part of the transactions a couple of weeks ago announced that they're looking to sell Frieze, Madrid open, Miami open and OpenBet. And I was actually in a couple of conversations earlier this week, and we had heard that Aria Emanuel is actually looking at buying these assets. Is that with his own money personally? Or could that involve any TKO money? And I ask that question because I think there's a lot of investors in TKO who are wondering whether you have any interest in buying or investing in any other non-sports leagues as part of TKO.
+
+Mark Shapiro
+
+Thanks, Rich. You never shy away from the tough ones. I would just tell you that I want to stress again that TKO will not bid on any other Endeavor assets, period, none, whatsoever. We won't sign an NDA. We won't explore.
+
+We won't read materials. Nothing whatsoever.
+
+To your specific question on Ari, I would tell you that Ari in his personal capacity, personal capacity, yes, he could be a bidder for any of the assets Endeavor is selling. I would also just remind you that Endeavor, although it is a TKO, I think, call, it's apropos. Endeavor is only exploring asset sales.
+
+So to your point, the sports betting assets, Madrid Open, Miami Open and Freeze Archer, which they've announced they're exploring potential asset sales, they haven't made any definitive decisions. I assume they'll walk down the process. I say that's assumed because obviously, Silver Lake Partners is playing a big role in that. And they'll decide what to do if and when the road leads to something.
+
+But yes, to your question, Ari in his personal capacity could be a bidder for any of the assets Endeavor is selling.
+
+Unidentified Analyst
+
+And then just on the non-sports piece, no other non-sports assets is in your purview, whether owned by TKO or others?
+
+Mark Shapiro
+
+We are sports pure play end of story. And I'm glad you said that because we did after the announcement of the Endeavor assets that we did or we are working to close and acquire, it was a question of, hey, are you staying sports pure play? I can't stress enough. These are sports pure play. This does not break away from our model or our strategy, sports rights, ticketing and premium experiences and another sports league.
+
+It's right in our wheelhouse, right? We know these properties extremely well because of our history. The deal was value accretive. As the business goes, we're still knee-deep in integration, which we've talked about today, as you can see from the quarter, WME had -- I mean excuse me, WWE had 54% EBITDA margins. I mean that's up 18 percentage points year-over-year.
+
+Our global sponsorships, our partnerships kicking strong. I think what gets lost sometimes is WWE, keep in mind, we came into the year with a little over $20 million in sponsorships.
+
+Coming into the year because some fell off from last year, and we're now up to $70 million or that's where we'll be end of year. So we're making significant progress with the integration, but there's clearly still a lot of wood to chop on the core integration. We see more opportunity, and we're laser-focused on it. Also, just finally, just going forward, when you look at why we're focused on these two battleships because that's the business. These other PBR are small, obviously, but it's a rising sports league.
+
+And the other two assets are going to fuel these two battleships. 85% to 90% of our adjusted EBITDA going forward is UFC and WWE. So our eyes are on the ball. We're going to finish the integration on the two core assets of WWE and UFC. We're going to then move sort of simultaneously on a parallel track to the integration of the new three assets.
+
+We're going to keep our head down. We're going to score numbers. We're going to keep this thing a cash flow gusher, and we're going to be focused on returning capital to shareholders.
+
+Unidentified Analyst
+
+Thanks for taking the question.
+
+Seth Zaslow
+
+I think that's a good time to wrap the call. Thank you, everyone, for your interest and for joining us on today's call. Operator, you can conclude the call.
+
+Operator
+
+Thank you so much. That concludes today's Q3 2024 TKO earnings call. Thank you for your participation. You may now disconnect your lines.
