@@ -37,3 +37,6 @@ for i in range(1, 6):
     print(f'Page {i} done')
 
 print(top_300)
+
+# Try new data
+link = 'https://sumersports.com/wp-content/uploads/data/def_pers_tendency.json'
