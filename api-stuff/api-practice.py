@@ -32,8 +32,7 @@ for i in range(1, 7):
 	request=requests.get(link, headers=headers)
 	swim_data=request.json()
 	results=pd.json_normalize(swim_data['results'])
-	top_300=pd.concat([top_300, results[['display_name', 'split.splittimes', 'eventtime']]], ignore_index=True)
-	print(f'Page {i} done')
+	top_300=pd.concat([top_300, results[['display_name', 'split.splittimes', 'eventtime', 'dateofswim']]], ignore_index=True)
 
 print(top_300)
 
