@@ -9,27 +9,25 @@ format:
 jupyter: python3
 ---
 
-Professional wrestling, while not everyone's cup of tea, is big business. What started as a carnival act has turned into a global 
-entertainment industry. Netflix recently started showing Monday Night Raw, a program from the biggest North American wrestling company, 
-WWE -- this deal is reportedly worth \$5 billion. Like any large entity, WWE is not without competition, drama, and scandal. 
+Professional wrestling, while not everyone's cup of tea, is big business. What started as a carnival act has turned into a global entertainment industry. Netflix recently started showing Monday Night Raw, a program from the biggest North American wrestling company, WWE -- this deal is reportedly worth \$5 billion. Like any large entity, WWE is not without competition, drama, and scandal. 
 
 ## General Tips
 
-This is very much a step-by-step process. Don't go crazy trying to get everything done with as few lines as possible. 
-Read the documentation for the AlphaVantage api! Carefully explore the pages from cagematch. There isn't a need to get too 
-fancy with anything here -- just go with simple function and all should be good. Don't print comments, but use normal text for explanations.
+This is very much a step-by-step process. Don't go crazy trying to get everything done with as few lines as possible. Read the documentation for the AlphaVantage api! Carefully explore the pages from cagematch. There isn't a need to get too fancy with anything here -- just go with simple function and all should be good. Don't print comments, but use normal text for explanations.
 
 ## Step 1
 
-In the `calls` folder, you'll find 4 text files -- these are transcripts from quarterly earnings calls. Read those 
-files in (glob.glob will be very helpful here), with appropriate column names for ticker, quarter, and year columns; this should 
-be done within a single function. Perform any data cleaning that you find necessary. 
+In the `calls` folder, you'll find 4 text files -- these are transcripts from quarterly earnings calls. Read those files in (glob.glob will be very helpful here), with appropriate column names for ticker, quarter, and year columns;this should be done within a single function. Perform any data cleaning that you find necessary. 
 
 ```{python}
 import glob as glob
 import pandas as pd
 
-glob.glob("C:/Users/sberry5/Documents/teaching/UDA/data/calls/*")
+# Get file paths to calls
+calls = glob.glob("G:/My Drive/MSBA/Unstructured/unstructured-notes/hw1/calls/*")
+
+# Read in the calls
+edr_q3_2023, tko_q3_2024, wwe_q1_2023, wwe_q2_2023 = [pd.read_table(call, header=None) for call in calls]
 ```
 
 ## Step 2
@@ -38,7 +36,37 @@ Use the AlphaVantage api to get daily stock prices for WWE and related tickers f
 
 ```{python}
 import requests 
+import plotly
 
+# Request inputs
+api_key = '8ETIBM8H1NQL1ZWG'
+tickers = ('EDR', 'TKO', 'WWE')
+
+# Make request and save data
+daily_prices = {}
+for ticker in tickers:
+  # Get data
+  url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={ticker}&outputsize=full&apikey={api_key}'
+  response = requests.get(url)
+  data = response.json()
+  # Extract time series data
+  time_series = data['Time Series (Daily)']
+  # Create DataFrame
+  df = pd.DataFrame.from_dict(time_series, orient='index')
+  df = df.rename(columns={
+      '1. open': 'open',
+      '2. high': 'high',
+      '3. low': 'low',
+      '4. close': 'close',
+      '5. volume': 'volume'
+  })
+  df.index = pd.to_datetime(df.index)
+  df = df.sort_index()
+  # Save DataFrame to a dictionary
+  daily_prices[ticker] = df
+
+
+# Plot each out
 ```
 
 ## Step 3

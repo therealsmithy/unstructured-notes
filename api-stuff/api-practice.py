@@ -27,8 +27,7 @@ results[['display_name', 'split.splittimes', 'eventtime']]
 
 # If I want to iterate through multiple pages of the API, I can use a for loop:
 top_300 = pd.DataFrame()
-
-for i in range(1, 6):
+for i in range(1, 7):
 	link=f'https://www.swimcloud.com/api/splashes/top_times/?dont_group=false&event=1200&eventcourse=Y&gender=M&page={i}&region=countryorganisation_usacollege&season_id=28'
 	request=requests.get(link, headers=headers)
 	swim_data=request.json()
