@@ -47,7 +47,7 @@ import plotly.express as px
 
 # Request inputs
 api_key = '8ETIBM8H1NQL1ZWG'
-tickers = ('EDR', 'TKO', 'WWE')
+tickers = ('TKO', 'WWE')
 
 # Make request and save data
 daily_prices = {}
@@ -72,11 +72,18 @@ for ticker in tickers:
   # Save DataFrame to a dictionary
   daily_prices[ticker] = df
 
+# Convert dictionary to dataframe
+wwe_price = pd.DataFrame.from_dict(daily_prices['WWE'])
+wwe_price['ticker'] = 'WWE'
+tko_price = pd.DataFrame.from_dict(daily_prices['TKO'])
+tko_price['ticker'] = 'TKO'
+stock_price = pd.concat([wwe_price, tko_price])
+# Select only last five years
+stock_price = stock_price[stock_price.index > '2020-01-01']
 
-# Plot each out
-#for ticker, df in daily_prices.items():
-#  fig = px.line(df, x=df.index, y='close', title=f'{ticker} Closing Prices Over Time')
-#  fig.show()
+# Plot
+fig = px.line(stock_price, x = stock_price.index, y = 'close', color = 'ticker', title = 'WWE Stock Price')
+#fig.show()
 ```
 
 ## Step 3
@@ -106,10 +113,9 @@ cagematch_top100 = cagematch_soup.select(
 
 # Create empty dataframe to populate
 matches = []
+# Loop through each match and pull out information
 for match in cagematch_top100:
   columns = match.find_all('td')
-  if len(columns) < 8:
-    continue
   rank = columns[0].text.strip()
   date = columns[1].text.strip()
   wrestlers = columns[3].text.strip().split(' vs. ')
@@ -117,21 +123,68 @@ for match in cagematch_top100:
   match_type = columns[5].text.strip()
   rating = columns[6].text.strip()
   votes = columns[7].text.strip()
-
+  # Check if there are two wrestlers
   if len(wrestlers) == 2:
     wrestler1, wrestler2 = wrestlers
   else:
     wrestler1, wrestler2 = wrestlers[0], 'N/A'
+  # Bring in promotion as well
+  try:
+    promotion = match.find_all('img')[0]['alt']
+  except IndexError:
+    promotion = 'N/A'
+  matches.append([rank, date, promotion, wrestler1, wrestler2, won, match_type, rating, votes])
 
-  matches.append([rank, date, wrestler1, wrestler2, won, match_type, rating, votes])
-
-cagematch_df = pd.DataFrame(matches, columns=['Rank', 'Date', 'Wrestler 1', 'Wrestler 2', 'Won', 'Match Type', 'Rating', 'Votes'])
+cagematch_df = pd.DataFrame(matches, columns=['Rank', 'Date', 'Promotion',  'Wrestler 1', 'Wrestler 2', 'Won', 'Match Type', 'Rating', 'Votes'])
 
 # Correlation between WON ratings and match ratings
-cagematch_df['Rating'] = cagematch_df['Rating'].astype(float)
-for won in cagematch_df['Won']:
+for i in range(len(cagematch_df)):
+  won = cagematch_df.loc[i, 'Won']
   stars = won.count('*')
-  
+  fraction_match = re.search(r'(\d/\d)', won)
+  # If there is a fraction at the end, convert it
+  fraction_value = 0
+  if fraction_match:
+    fraction_str = fraction_match.group(1)
+    fraction_value = eval(fraction_str)
+  cagematch_df.loc[i, 'Won'] = float(stars + fraction_value)
+cagematch_df['Rating'] = cagematch_df['Rating'].astype(float)
+print(cagematch_df['Won'].corr(cagematch_df['Rating']))
+
+# Wrestler with the most matches
+w1_counts = cagematch_df['Wrestler 1'].value_counts()
+w2_counts = cagematch_df['Wrestler 2'].value_counts()
+# Join the two dataframes
+wrestler_counts = pd.concat([w1_counts, w2_counts])
+print(wrestler_counts.sort_values(ascending=False).head(1))
+
+# Promotion with the most matches
+promotion_counts = cagematch_df['Promotion'].value_counts()
+print(promotion_counts.sort_values(ascending=False).head(1))
+
+# Average WON rating for each promotion
+print(cagematch_df.groupby('Promotion')['Won'].mean())
+
+# Ric Flair vs. Ricky Steamboat
+individual_link = 'https://www.cagematch.net/?id=111&nr=808&page=99'
+individual = requests.get(individual_link)
+individual_soup = BeautifulSoup(individual.content, 'html.parser')
+ric_vs_ricky = individual_soup.select(
+  '.CommentContents'
+)
+# Pull out what we want
+ric_vs_ricky = [ric_vs_ricky[i].getText() for i in range(len(ric_vs_ricky))]
+ric_vs_ricky_df = pd.DataFrame(columns = ['rating', 'comment'])
+for comment in ric_vs_ricky:
+  rating = re.search(r'\[(.*?)\]', comment)
+  if rating:
+    rating = rating.group(0)
+  else:
+    rating = 'N/A'
+  comment = re.sub(r'\[(.*?)\]', '', comment)
+  ric_vs_ricky_df = pd.concat([ric_vs_ricky_df, pd.DataFrame({'rating': [rating], 'comment': [comment]})])
+# Assign index
+ric_vs_ricky_df.index = range(len(ric_vs_ricky_df))
 ```
 
 ## Step 4
