@@ -22,12 +22,19 @@ In the `calls` folder, you'll find 4 text files -- these are transcripts from qu
 ```{python}
 import glob as glob
 import pandas as pd
+import re
 
 # Get file paths to calls
 calls = glob.glob("G:/My Drive/MSBA/Unstructured/unstructured-notes/hw1/calls/*")
 
-# Read in the calls
-edr_q3_2023, tko_q3_2024, wwe_q1_2023, wwe_q2_2023 = [pd.read_table(call, header=None) for call in calls]
+# Read in the calls into one dataframe
+calls_df = pd.DataFrame(columns = ['text', 'ticker', 'quarter', 'year'])
+for call in calls:
+  table = pd.read_table(call, header = None, names = ['text'])
+  table['ticker'] = re.search(r'(?<=calls\\).*(?=_q)', call).group(0).upper()
+  table['quarter'] = re.search(r'(?<=calls\\.{3}_).*(?=_)', call).group(0).upper()
+  table['year'] = re.search(r'(?<=q.{1}_).{4}', call).group(0)
+  calls_df = pd.concat([calls_df, table])
 ```
 
 ## Step 2
@@ -36,7 +43,7 @@ Use the AlphaVantage api to get daily stock prices for WWE and related tickers f
 
 ```{python}
 import requests 
-import plotly
+import plotly.express as px
 
 # Request inputs
 api_key = '8ETIBM8H1NQL1ZWG'
@@ -67,6 +74,9 @@ for ticker in tickers:
 
 
 # Plot each out
+#for ticker, df in daily_prices.items():
+#  fig = px.line(df, x=df.index, y='close', title=f'{ticker} Closing Prices Over Time')
+#  fig.show()
 ```
 
 ## Step 3
@@ -86,6 +96,42 @@ Just like every other nerdy hobby, professional wrestling draws dedicated fans. 
 ```{python}
 from bs4 import BeautifulSoup
 
+link = 'https://www.cagematch.net/?id=111&view=statistics'
+cagematch = requests.get(link)
+cagematch_soup = BeautifulSoup(cagematch.content, 'html.parser')
+
+cagematch_top100 = cagematch_soup.select(
+  '.TRow1, .TRow2'
+)
+
+# Create empty dataframe to populate
+matches = []
+for match in cagematch_top100:
+  columns = match.find_all('td')
+  if len(columns) < 8:
+    continue
+  rank = columns[0].text.strip()
+  date = columns[1].text.strip()
+  wrestlers = columns[3].text.strip().split(' vs. ')
+  won = columns[4].text.strip()
+  match_type = columns[5].text.strip()
+  rating = columns[6].text.strip()
+  votes = columns[7].text.strip()
+
+  if len(wrestlers) == 2:
+    wrestler1, wrestler2 = wrestlers
+  else:
+    wrestler1, wrestler2 = wrestlers[0], 'N/A'
+
+  matches.append([rank, date, wrestler1, wrestler2, won, match_type, rating, votes])
+
+cagematch_df = pd.DataFrame(matches, columns=['Rank', 'Date', 'Wrestler 1', 'Wrestler 2', 'Won', 'Match Type', 'Rating', 'Votes'])
+
+# Correlation between WON ratings and match ratings
+cagematch_df['Rating'] = cagematch_df['Rating'].astype(float)
+for won in cagematch_df['Won']:
+  stars = won.count('*')
+  
 ```
 
 ## Step 4
