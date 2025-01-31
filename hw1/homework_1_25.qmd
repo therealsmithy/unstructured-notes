@@ -43,7 +43,7 @@ Use the AlphaVantage api to get daily stock prices for WWE and related tickers f
 
 ```{python}
 import requests 
-import plotly.express as px
+import altair as alt
 
 # Request inputs
 api_key = '8ETIBM8H1NQL1ZWG'
@@ -82,8 +82,9 @@ stock_price = pd.concat([wwe_price, tko_price])
 stock_price = stock_price[stock_price.index > '2020-01-01']
 
 # Plot
-fig = px.line(stock_price, x = stock_price.index, y = 'close', color = 'ticker', title = 'WWE Stock Price')
-#fig.show()
+for ticker in stock_price['ticker'].unique():
+    ticker_data = stock_price[stock_price['ticker'] == ticker]
+    plt.plot(ticker_data.index, ticker_data['close'], label=ticker)
 ```
 
 ## Step 3
@@ -196,7 +197,20 @@ You can't have matches without wrestlers. The following link contains the top 10
 ***** Of the top 100, which wrestler has the best win/loss?
 
 ```{python}
+from playwright.sync_api import sync_playwright, Playwright
 
+# Let's try PlayWright
+pw = sync_playwright().start()
+chrome = pw.chromium.launch(headless=False)
+page = chrome.new_page()
+page.goto('https://www.cagematch.net/?id=2&view=statistics')
+
+link = 'https://www.cagematch.net/?id=2&view=statistics'
+top_wrestlers = requests.get(link)
+wrestlers_soup = BeautifulSoup(top_wrestlers.content, 'html.parser')
+top_wrestlers = wrestlers_soup.select(
+  '.TRow1, .TRow2'
+)
 ```
 
 ## Step 5
