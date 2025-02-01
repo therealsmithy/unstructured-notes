@@ -1,6 +1,6 @@
 ---
 title: "Homework 1"
-author: "Your Name Here"
+author: "Liam Smith"
 format:
   html:
     toc: true
@@ -43,7 +43,7 @@ Use the AlphaVantage api to get daily stock prices for WWE and related tickers f
 
 ```{python}
 import requests 
-import altair as alt
+import plotly.express as px
 
 # Request inputs
 api_key = '8ETIBM8H1NQL1ZWG'
@@ -80,11 +80,29 @@ tko_price['ticker'] = 'TKO'
 stock_price = pd.concat([wwe_price, tko_price])
 # Select only last five years
 stock_price = stock_price[stock_price.index > '2020-01-01']
+stock_price['close'] = stock_price['close'].astype(float)
 
 # Plot
-for ticker in stock_price['ticker'].unique():
-    ticker_data = stock_price[stock_price['ticker'] == ticker]
-    plt.plot(ticker_data.index, ticker_data['close'], label=ticker)
+px.line(stock_price, x=stock_price.index, y='close', color='ticker', title='WWE/TKO Stock Price Over Time').update_layout(
+ annotations =[dict(
+    x = '2023-09-12',
+    y = 103.05,
+    text = 'TKO Takes over WWE',
+    showarrow = True,
+    arrowhead = 1,
+    ax = 10,
+    ay = -70,
+    arrowwidth = 2,
+    arrowcolor = 'white',
+    bgcolor = 'black',
+    bordercolor = 'white',
+  )],
+  xaxis_title = 'Date',
+  yaxis_title = 'Stock Price (USD)',
+  paper_bgcolor="black",
+  plot_bgcolor="black",
+  font=dict(color="white")
+)
 ```
 
 ## Step 3
@@ -204,13 +222,6 @@ pw = sync_playwright().start()
 chrome = pw.chromium.launch(headless=False)
 page = chrome.new_page()
 page.goto('https://www.cagematch.net/?id=2&view=statistics')
-
-link = 'https://www.cagematch.net/?id=2&view=statistics'
-top_wrestlers = requests.get(link)
-wrestlers_soup = BeautifulSoup(top_wrestlers.content, 'html.parser')
-top_wrestlers = wrestlers_soup.select(
-  '.TRow1, .TRow2'
-)
 ```
 
 ## Step 5

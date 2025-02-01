@@ -28,13 +28,10 @@ results[['display_name', 'split.splittimes', 'eventtime']]
 # If I want to iterate through multiple pages of the API, I can use a for loop:
 top_300 = pd.DataFrame()
 for i in range(1, 7):
-	link=f'https://www.swimcloud.com/api/splashes/top_times/?dont_group=false&event=1200&eventcourse=Y&gender=M&page={i}&region=countryorganisation_usacollege&season_id=28'
-	request=requests.get(link, headers=headers)
-	swim_data=request.json()
-	results=pd.json_normalize(swim_data['results'])
-	top_300=pd.concat([top_300, results[['display_name', 'split.splittimes', 'eventtime', 'dateofswim']]], ignore_index=True)
+    link=f'https://www.swimcloud.com/api/splashes/top_times/?dont_group=false&event=1200&eventcourse=Y&gender=M&page={i}&region=countryorganisation_usacollege&season_id=28'
+    request=requests.get(link, headers=headers)
+    swim_data=request.json()
+    results=pd.json_normalize(swim_data['results'])
+    top_300=pd.concat([top_300, results[['display_name', 'split.splittimes', 'eventtime', 'dateofswim']]], ignore_index=True)
 
 print(top_300)
-
-# Try new data
-link = 'https://sumersports.com/wp-content/uploads/data/def_pers_tendency.json'
