@@ -204,6 +204,7 @@ for comment in ric_vs_ricky:
   ric_vs_ricky_df = pd.concat([ric_vs_ricky_df, pd.DataFrame({'rating': [rating], 'comment': [comment]})])
 # Assign index
 ric_vs_ricky_df.index = range(len(ric_vs_ricky_df))
+ric_vs_ricky_df.head()
 ```
 
 ## Step 4
@@ -215,13 +216,56 @@ You can't have matches without wrestlers. The following link contains the top 10
 ***** Of the top 100, which wrestler has the best win/loss?
 
 ```{python}
-from playwright.sync_api import sync_playwright, Playwright
+'''
+link = 'https://www.cagematch.net/?id=2&view=statistics'
+top_wrestlers = requests.get(link)
+top_wrestlers_soup = BeautifulSoup(top_wrestlers.content, 'html.parser')
+top_wrestlers = top_wrestlers_soup.select(
+  '.TRow1, .TRow2'
+)
+len(top_wrestlers)
 
-# Let's try PlayWright
-pw = sync_playwright().start()
-chrome = pw.chromium.launch(headless=False)
-page = chrome.new_page()
-page.goto('https://www.cagematch.net/?id=2&view=statistics')
+# Empty dataframe for their ID
+wrestler_ids = pd.DataFrame(columns = ['Name', 'ID'])
+for wrestler in top_wrestlers:
+  # Find and pull out ID
+  id_cols = wrestler.find_all('td')
+  wrestler_id = id_cols[1].find('a')['href']
+  wrestler_id = re.search(r'(?<=nr=)\d+', wrestler_id).group(0)
+  wrestler_id = int(wrestler_id)
+  # Find and pull out name
+  name_cols = wrestler.find_all('td')
+  name = name_cols[1].text.strip()
+  wrestler_ids = pd.concat([wrestler_ids, pd.DataFrame({'Name': [name], 'ID': [wrestler_id]})])
+
+# Clean up dataframe
+wrestler_ids.index = range(len(wrestler_ids))
+
+# Match statistic link
+wrestler_stats = pd.DataFrame(columns = ['Name', 'ID', 'Matches', 'Wins', 'Losses', 'Draws'])
+wrestler_stats['ID'] = wrestler_ids['ID']
+wrestler_stats['Name'] = wrestler_ids['Name']
+for id in wrestler_ids['ID']:
+  link = f'https://www.cagematch.net/?id=2&nr={id}&page=22'
+  wrestler = requests.get(link)
+  wrestler_soup = BeautifulSoup(wrestler.content, 'html.parser')
+  wrestler = wrestler_soup.select(
+    '.InformationBoxContents'
+  )
+  # Empty list to populate
+  stats = []
+  for stat in wrestler:
+    match = wrestler[0].text.strip()
+    win = wrestler[1].text.strip()
+    loss = wrestler[2].text.strip()
+    draw = wrestler[3].text.strip()
+    stats.append([match, win, loss, draw])
+  # Append to dataframe
+  wrestler_stats = pd.concat([wrestler_stats, pd.DataFrame({'ID': [id], 'Name': wrestler_ids[wrestler_ids['ID'] == id]['Name'].values[0], 'Matches': [match], 'Wins': [win], 'Losses': [loss], 'Draws': [draw]})], ignore_index=True)
+'''
+wrestler_stats = wrestler_stats.dropna()
+# Reset index
+wrestler_stats.index = range(len(wrestler_stats))
 ```
 
 ## Step 5
