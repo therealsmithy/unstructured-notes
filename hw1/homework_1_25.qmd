@@ -44,6 +44,8 @@ Use the AlphaVantage api to get daily stock prices for WWE and related tickers f
 ```{python}
 import requests 
 import plotly.express as px
+import plotly.io as pio
+pio.renderers.default = "notebook"
 
 # Request inputs
 api_key = '8ETIBM8H1NQL1ZWG'
@@ -83,7 +85,7 @@ stock_price = stock_price[stock_price.index > '2020-01-01']
 stock_price['close'] = stock_price['close'].astype(float)
 
 # Plot
-px.line(stock_price, x=stock_price.index, y='close', color='ticker', title='WWE/TKO Stock Price Over Time').update_layout(
+fig = px.line(stock_price, x=stock_price.index, y='close', color='ticker', title='WWE/TKO Stock Price Over Time').update_layout(
  annotations =[dict(
     x = '2023-09-12',
     y = 103.05,
@@ -103,6 +105,8 @@ px.line(stock_price, x=stock_price.index, y='close', color='ticker', title='WWE/
   plot_bgcolor="black",
   font=dict(color="white")
 )
+
+fig.show()
 ```
 
 ## Step 3
@@ -283,11 +287,11 @@ print(wrestler_stats.sort_values(by='Win Percentage (%)', ascending=False).head(
 
 With all of this work out of the way, we can start getting down to strategy.
 
-First, what talent should WWE pursue? Advise carefully.
+First, what talent should WWE pursue? Advise carefully.<br>
 TKO Holdings is a conglomerate that was created when the WWE merged with Zuffa, LLC., the parent of UFC. Moving forward, TKO should look worldwide to acquiring new talent in order to keep its customers satisfied. According to Cagematch.net, the top two wrestling promotions of all time are All Elite Wrestling and New Japan Pro Wrestling. In 2024 AEW ranked behind the WWE and UFC as the third largest combat sports organization in the world. TKO should look to acquire talent from AEW, or look for a partnership with them in order to continue growing their North American presence. New Japan Pro Wrestling offers an exciting opportunity to expand abroad. Looking at the Cagematch.net rankings shows that the top 9 wrestlers are from Japan. Similar to AEW, TKO should look to acquire talent from New Japan Pro Wrestling or form a partnership with them in order to expand their global presence. 
 
-Second, reconcile what you found in steps 3 and 4 with Netflix's relationship with WWE. Use the data from the following page to help make your case: https://wrestlenomics.com/tv-ratings/
+Second, reconcile what you found in steps 3 and 4 with Netflix's relationship with WWE. Use the data from the following page to help make your case: https://wrestlenomics.com/tv-ratings/<br>
 Starting in January of 2025, the WWE and Netflix entered into a parentership that gives Netflix exclusive streaming rights to WWE's Monday Night Raw. Raw is one of WWE's premier events, along with Smackdown, and this shift to Netflix marks a new era in the history of WWE. The last episode before the move to Netflix brought in 1.5M+ viewers, while the first Netflix stream brought in 4.9M+ viewers. By putting Raw on Netflix, international viewers are offered an easy way to replay the event, even if they can not watch it live. As shown in steps 3 and 4, some of the highest level of wrestling talent comes from Japan, with many of the top events coming from New Japan Pro Wrestling. If the WWE can put out a product with a similar level of enjoyment for the fans, they can expect their viewership to grow internationally. If growth continues to happen, the WWE can consider expanding their partnership with Netflix, bringing their other premier events to the streaming platform.
 
-Third, do you have any further recommendations for WWE?
+Third, do you have any further recommendations for WWE?<br>
 Moving forward, it is apparent to me that the WWE should have two objectives: expanding their viewership through the Netflix partnership and advancing into the international space. In some other sports there has been success around having events where countries are pitted against each other. I think that if TKO does not see an acquisition of New Japan Pro Wrestling as a feasible option, they should consider a massive crossover event. This event could be held in Japan and feature the top wrestlers from the WWE and New Japan Pro Wrestling. This event would be a great way to introduce the WWE to the Japanese market and could be a great way to expand their international presence. By having this event on Netflix, the WWE can hit on both of these objectives.
