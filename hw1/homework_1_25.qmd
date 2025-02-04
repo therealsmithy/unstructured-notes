@@ -216,7 +216,6 @@ You can't have matches without wrestlers. The following link contains the top 10
 ***** Of the top 100, which wrestler has the best win/loss?
 
 ```{python}
-'''
 link = 'https://www.cagematch.net/?id=2&view=statistics'
 top_wrestlers = requests.get(link)
 top_wrestlers_soup = BeautifulSoup(top_wrestlers.content, 'html.parser')
@@ -241,10 +240,8 @@ for wrestler in top_wrestlers:
 # Clean up dataframe
 wrestler_ids.index = range(len(wrestler_ids))
 
-# Match statistic link
+# Go get match stats
 wrestler_stats = pd.DataFrame(columns = ['Name', 'ID', 'Matches', 'Wins', 'Losses', 'Draws'])
-wrestler_stats['ID'] = wrestler_ids['ID']
-wrestler_stats['Name'] = wrestler_ids['Name']
 for id in wrestler_ids['ID']:
   link = f'https://www.cagematch.net/?id=2&nr={id}&page=22'
   wrestler = requests.get(link)
@@ -262,10 +259,27 @@ for id in wrestler_ids['ID']:
     stats.append([match, win, loss, draw])
   # Append to dataframe
   wrestler_stats = pd.concat([wrestler_stats, pd.DataFrame({'ID': [id], 'Name': wrestler_ids[wrestler_ids['ID'] == id]['Name'].values[0], 'Matches': [match], 'Wins': [win], 'Losses': [loss], 'Draws': [draw]})], ignore_index=True)
-'''
-wrestler_stats = wrestler_stats.dropna()
 # Reset index
 wrestler_stats.index = range(len(wrestler_stats))
+
+# Clean up columns
+wrestler_stats['Matches'] = wrestler_stats['Matches'].astype(int)
+wrestler_stats['Win Count'] = wrestler_stats['Wins'].str.extract(r'(\d+)').astype(int)
+wrestler_stats['Win Percentage (%)'] = wrestler_stats['Wins'].str.extract(r'\(([^)]+)\)')
+wrestler_stats['Win Percentage (%)'] = wrestler_stats['Win Percentage (%)'].str.replace('%', '').astype(float)
+wrestler_stats['Loss Count'] = wrestler_stats['Losses'].str.extract(r'(\d+)').astype(int)
+wrestler_stats['Loss Percentage (%)'] = wrestler_stats['Losses'].str.extract(r'\(([^)]+)\)')
+wrestler_stats['Loss Percentage (%)'] = wrestler_stats['Loss Percentage (%)'].str.replace('%', '').astype(float)
+wrestler_stats['Draw Count'] = wrestler_stats['Draws'].str.extract(r'(\d+)').astype(int)
+wrestler_stats['Draw Percentage (%)'] = wrestler_stats['Draws'].str.extract(r'\(([^)]+)\)')
+wrestler_stats['Draw Percentage (%)'] = wrestler_stats['Draw Percentage (%)'].str.replace('%', '').astype(float)
+wrestler_stats = wrestler_stats.drop(columns=['Wins', 'Losses', 'Draws'])
+
+# Wrestler with most matches
+print(wrestler_stats.sort_values(by='Matches', ascending=False).head(1))
+
+# Wrestler with best win/loss
+print(wrestler_stats.sort_values(by='Win Percentage (%)', ascending=False).head(1))
 ```
 
 ## Step 5
