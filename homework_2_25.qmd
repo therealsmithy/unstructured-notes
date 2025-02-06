@@ -1,0 +1,103 @@
+---
+title: "Homework 2"
+author: "Liam Smith"
+format:
+  html:
+    toc: true
+    toc-location: left
+    self-contained: true
+jupyter: python3
+---
+
+## Task 1
+
+We are going to return to the table of the top 100 wrestlers: https://www.cagematch.net/?id=2&view=statistics. Specifically, you are going to get the ratings/comments tables for each wrestler.
+```{python Scrape wrestler ID}
+# Import necessary libraries
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+import re
+
+# First get IDs for each wrestler
+link = 'https://www.cagematch.net/?id=2&view=statistics'
+top_wrestlers = requests.get(link)
+top_wrestlers_soup = BeautifulSoup(top_wrestlers.content, 'html.parser')
+top_wrestlers = top_wrestlers_soup.select(
+  '.TRow1, .TRow2'
+)
+len(top_wrestlers)
+
+# Empty dataframe for their ID
+wrestler_ids = pd.DataFrame(columns = ['Name', 'ID'])
+for wrestler in top_wrestlers:
+  # Find and pull out ID
+  id_cols = wrestler.find_all('td')
+  wrestler_id = id_cols[1].find('a')['href']
+  wrestler_id = re.search(r'(?<=nr=)\d+', wrestler_id).group(0)
+  wrestler_id = int(wrestler_id)
+  # Find and pull out name
+  name_cols = wrestler.find_all('td')
+  name = name_cols[1].text.strip()
+  wrestler_ids = pd.concat([wrestler_ids, pd.DataFrame({'Name': [name], 'ID': [wrestler_id]})])
+
+# Clean up dataframe
+wrestler_ids.index = range(len(wrestler_ids))
+```
+
+```{python Scrape and clean comments}
+# Go get comments and ratings
+wrestler_df = pd.DataFrame(columns = ['Name', 'Rating', 'Comment'])
+for id in wrestler_ids['ID']:
+  link = f'https://www.cagematch.net/?id=2&nr={id}&page=99'
+  comments = requests.get(link)
+  comment_soup = BeautifulSoup(comments.content, 'html.parser')
+  wrestler = comment_soup.select('.CommentContents')
+  wrestler = [wrestler[i].getText() for i in range(len(wrestler))]
+  wrestler = pd.DataFrame(wrestler, columns = ['Comment'])
+  for index, row in wrestler.iterrows():
+    comment = row['Comment']
+    rating = re.search(r'^\[\d+\.?\d?\]', comment)
+    if rating:
+      rating = rating.group(0)
+    else:
+      rating = 'N/A'
+    comment = re.sub(r'^\[\d+\.?\d?\]', '', comment)
+    name = wrestler_ids[wrestler_ids['ID'] == id]['Name'].values[0]
+    wrestler_df = pd.concat([wrestler_df, pd.DataFrame({'Name': [name], 'Rating': [rating], 'Comment': [comment]})], ignore_index=True)
+```
+
+## Task 2
+
+Perform any form of sentiment analysis. What is the relationship between a reviewer's sentiment and their rating?
+```{python sentiment analysis}
+import spacy
+from spacytextblob.spacytextblob import SpacyTextBlob
+
+nlp = spacy.load('en_core_web_lg')
+nlp.add_pipe('spacytextblob')
+sentiment_df = wrestler_df.copy()
+sentiment_df['Sentiment'] = sentiment_df['Comment'].apply(lambda x: nlp(x)._.blob.polarity)
+```
+
+```{python cleaning for graph}
+# Remove rows where rating is N/A
+sentiment_df = sentiment_df[sentiment_df['Rating'] != 'N/A']
+# Remove brackets from rating
+sentiment_df['Rating'] = sentiment_df['Rating'].str.replace('[', '').str.replace(']', '')
+# Convert rating to int
+sentiment_df['Rating'] = sentiment_df['Rating'].astype(float)
+```
+
+```{python graphing sentiment} 
+import plotly.express as px
+fig = px.scatter(sentiment_df, x = 'Rating', y = 'Sentiment', color = 'Name')
+fig.update_layout(showlegend=False)
+fig.update_layout(title = 'Sentiment vs Rating')
+fig.update_layout(template = 'plotly_dark')
+fig.show()
+```
+
+## Task 3
+
+Perform any type of topic modeling on the comments. What are the main topics of the comments? How can you use those topics to understand what people value?
