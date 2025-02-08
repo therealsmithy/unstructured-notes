@@ -89,7 +89,7 @@ sentiment_df['Rating'] = sentiment_df['Rating'].str.replace('[', '').str.replace
 sentiment_df['Rating'] = sentiment_df['Rating'].astype(float)
 ```
 
-```{python graphing sentiment} 
+```{python graphing sentiment as scatter} 
 import plotly.express as px
 fig = px.scatter(sentiment_df, x = 'Rating', y = 'Sentiment', color = 'Name')
 fig.update_layout(showlegend=False)
@@ -98,6 +98,47 @@ fig.update_layout(template = 'plotly_dark')
 fig.show()
 ```
 
+```{python graphing sentiment as boxplot}
+fig2 = px.box(sentiment_df, x = 'Rating', y = 'Sentiment')
+fig2.update_layout(title = 'Sentiment vs Rating')
+fig2.update_layout(template = 'plotly_dark')
+fig2.update_layout(showlegend=False)
+fig2.show()
+```
+
 ## Task 3
 
 Perform any type of topic modeling on the comments. What are the main topics of the comments? How can you use those topics to understand what people value?
+```{python translate everything to english}
+from deep_translator import GoogleTranslator
+
+# Define function to translate
+def translate_to_english(text):
+  translator = GoogleTranslator(source='auto', target='en')
+  return translator.translate(text)
+
+# TEXT IS TOO LONG. MUST BE LESS THAN 500 CHARACTERS.
+# Apply function to comments for first 1000 rows
+sentiment_df['Comment'] = sentiment_df['Comment'].apply(lambda x: translate_to_english(x))
+```
+
+```{python topic modeling}
+from bertopic import BERTopic
+from bertopic.vectorizers import ClassTfidfTransformer
+
+# Clustered Tfidf
+ctfidf_model = ClassTfidfTransformer(
+  reduce_frequent_words = True
+)
+
+# Create BERTopic model
+topic_model = BERTopic(ctfidf_model = ctfidf_model)
+
+# Fit model
+topics, probs = topic_model.fit_transform(sentiment_df['Comment'].to_list())
+```
+
+```{python inspecting topics}
+topic_model.get_topic_info()
+topic_model.get_topic(0)
+```
