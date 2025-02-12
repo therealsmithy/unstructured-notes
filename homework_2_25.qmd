@@ -18,6 +18,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import re
+from joblib import dump, load
+from langdetect import detect
 
 # First get IDs for each wrestler
 link = 'https://www.cagematch.net/?id=2&view=statistics'
@@ -77,10 +79,23 @@ from spacytextblob.spacytextblob import SpacyTextBlob
 nlp = spacy.load('en_core_web_lg')
 nlp.add_pipe('spacytextblob')
 sentiment_df = wrestler_df.copy()
-sentiment_df['Sentiment'] = sentiment_df['Comment'].apply(lambda x: nlp(x)._.blob.polarity)
+#sentiment_df['Sentiment'] = sentiment_df['Comment'].apply(lambda x: nlp(x)._.blob.polarity)
+
+#dump(sentiment_df, 'sentiment_df.joblib')
 ```
 
 ```{python cleaning for graph}
+# Load sentiment_df
+sentiment_df = load('sentiment_df.joblib')
+
+# Remove links
+sentiment_df = sentiment_df[~sentiment_df['Comment'].str.contains('http')]
+
+# Detect language and remove rows where language is not English
+sentiment_df['Language'] = sentiment_df['Comment'].apply(detect)
+sentiment_df = sentiment_df[sentiment_df['Language'] == 'en']
+sentiment_df.drop(columns=['Language'], inplace=True)
+
 # Remove rows where rating is N/A
 sentiment_df = sentiment_df[sentiment_df['Rating'] != 'N/A']
 # Remove brackets from rating
@@ -90,12 +105,15 @@ sentiment_df['Rating'] = sentiment_df['Rating'].astype(float)
 ```
 
 ```{python graphing sentiment as scatter} 
+'''
 import plotly.express as px
 fig = px.scatter(sentiment_df, x = 'Rating', y = 'Sentiment', color = 'Name')
 fig.update_layout(showlegend=False)
 fig.update_layout(title = 'Sentiment vs Rating')
 fig.update_layout(template = 'plotly_dark')
 fig.show()
+'''
+# Commented out because box plot is better since there is only certain values of Rating
 ```
 
 ```{python graphing sentiment as boxplot}
@@ -110,6 +128,8 @@ fig2.show()
 
 Perform any type of topic modeling on the comments. What are the main topics of the comments? How can you use those topics to understand what people value?
 ```{python translate everything to english}
+# Tried it...
+'''
 from deep_translator import GoogleTranslator
 
 # Define function to translate
@@ -120,6 +140,7 @@ def translate_to_english(text):
 # TEXT IS TOO LONG. MUST BE LESS THAN 500 CHARACTERS.
 # Apply function to comments for first 1000 rows
 sentiment_df['Comment'] = sentiment_df['Comment'].apply(lambda x: translate_to_english(x))
+'''
 ```
 
 ```{python topic modeling}
@@ -139,6 +160,9 @@ topics, probs = topic_model.fit_transform(sentiment_df['Comment'].to_list())
 ```
 
 ```{python inspecting topics}
-topic_model.get_topic_info()
 topic_model.get_topic(0)
+topic_model.get_topic(1)
+topic_model.get_topic(2)
+topic_model.get_topic_info()
 ```
+The top topic contains words that you would expect to see in positive comments about a wrestler. Words like "legend", "greatest", and "technical" used to talk about how one feels about a wrestler. These positive words being the top topic, along with the sentiment analysis being mostly positive, suggests to me that most people are only coming to comment on Cagematch if they feel very passionately about a wrestler. The next four topics are all about a specific wrestler: CM Punk, Chris Jericho, the Undertaker, and AJ Styles. This suggests a high popularity of these wrestlers where a lot of people are coming to comment on their page. The top words in these topics also indicate that people closely relate wrestlers with others, more specifically, they characterize wrestlers by their rivalries. CM Punk had one of the most iconic rivalries in WWE history with John Cena and this is shown through the frequency of the words "john" and "cena" in the topic. Another frequent word in CM Punk's topic is "pipebomb", which was a promo in which CM Punk criticized the WWE. This shows that big moments stick with fans and impact their view of a wrestler. Professional wrestling is undoubtedly a form of entertainment unlike any other. Cagematch tells us that the love it so much due to the greatness of certain wrestlers, the rivalries they have, and the moments they create.
